@@ -42,7 +42,7 @@ const Register = () => {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/api/v1/user/register",
+        "https://backendcampushub.onrender.com/api/v1/user/register",
         formData,
         {
           withCredentials: true,
