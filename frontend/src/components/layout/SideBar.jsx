@@ -50,9 +50,9 @@ const SideBar = ({ setComponent }) => {
           <p>{user.name}</p>
         </div>
         <ul>
-          <button onClick={() => handleComponent("My Blogs")}>MY BLOGS</button>
+          <button onClick={() => handleComponent("My Blogs")}>MY POSTS</button>
           <button onClick={() => handleComponent("Create Blog")}>
-            CREATE BLOG
+            CREATE POST/BLOG
           </button>
           <button onClick={() => handleComponent("Analytics")}>
             CHART

@@ -140,22 +140,22 @@ const CreateBlog = () => {
               onChange={(e) => setCategory(e.target.value)}
             >
               <option value="">Select Blog Category</option>
-              <option value="Lifestyle">Lifestyle</option>
-              <option value="Technology">Technology</option>
-              <option value="Sports">Sports</option>
-              <option value="Travel">Travel</option>
-              <option value="Business">Business</option>
-              <option value="Economy">Economy</option>
+              <option value="LostAndFound">Lost and Found</option>
+              <option value="Events">Post an upcoming event</option>
+              <option value="Blog">Blog</option>
+              <option value="Articles">Articles</option>
+              
+              <option value="Others">Others</option>
             </select>
           </div>
           <input
             type="text"
-            placeholder="BLOG MAIN TITLE"
+            placeholder="POST MAIN TITLE"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
           />
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <label>BLOG MAIN IMAGE</label>
+            <label>MAIN IMAGE</label>
             <img
               src={mainImagePreview ? `${mainImagePreview}` : "/imgPL.webp"}
               alt="mainImg"
@@ -170,7 +170,7 @@ const CreateBlog = () => {
           <textarea
             rows="25"
             className="intro"
-            placeholder="BLOG INTRO..... (Must contain at least 250 characters!)"
+            placeholder="POST INTRO..... (Must contain at least 250 characters!)"
             value={intro}
             onChange={(e) => setIntro(e.target.value)}
           />
@@ -194,7 +194,7 @@ const CreateBlog = () => {
             />
             <textarea
               rows="10"
-              placeholder="Blog First Sub Paragraph Comes Here..."
+              placeholder="First Sub Paragraph Comes Here..."
               value={paraOneDescription}
               onChange={(e) => setParaOneDescription(e.target.value)}
             />
@@ -219,7 +219,7 @@ const CreateBlog = () => {
             />
             <textarea
               rows="10"
-              placeholder="Blog Second Sub Paragraph Comes Here..."
+              placeholder="Second Sub Paragraph Comes Here..."
               value={paraTwoDescription}
               onChange={(e) => setParaTwoDescription(e.target.value)}
             />
@@ -246,13 +246,13 @@ const CreateBlog = () => {
             />
             <textarea
               rows="10"
-              placeholder="Blog Third Sub Paragraph Comes Here..."
+              placeholder="Third Sub Paragraph Comes Here..."
               value={paraThreeDescription}
               onChange={(e) => setParaThreeDescription(e.target.value)}
             />
           </div>
           <div className="publish-box">
-            <label>Wants to publish now?</label>
+            <label>Want to publish it now?</label>
             <select
               value={published}
               onChange={(e) => setPublished(e.target.value === "true")}

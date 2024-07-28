@@ -47,7 +47,7 @@ const Navbar = () => {
     >
       <nav>
         <div className="logo">
-          Zeta<span>Blog</span>
+          Campus<span>Hub</span>
         </div>
         <div className={show ? "links show" : "links"}>
           <ul>
@@ -58,7 +58,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link to={"/blogs"} onClick={handleNavbar}>
-                BLOGS
+                BLOGS/POSTS
               </Link>
             </li>
             <li>
